@@ -9,10 +9,9 @@ public class n10808 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String inputStr = "";
         inputStr = br.readLine();
-
         int[] result = new int[26];
-
         int index = 0;
+
         for (int i = 0; i < inputStr.length(); i++) {
             index = ((int) inputStr.charAt(i)) - 97;
             result[index] += 1;
