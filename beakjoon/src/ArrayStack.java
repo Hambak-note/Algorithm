@@ -44,8 +44,8 @@ public class ArrayStack implements Stack {
            System.out.println("Stack is empty!");
            return 0;
        }else{
-           System.out.println("Peeked item : " + stackArr[top]);
-           return stackArr[top];
+           System.out.println("Deleted item : " + stackArr[top]);
+           return stackArr[top--];
        }
     }
 
@@ -56,8 +56,8 @@ public class ArrayStack implements Stack {
             System.out.println("Stack is empty!");
             return 0;
         } else{
-            System.out.println("Deleted Item : " + stackArr[top]);
-            return stackArr[top--];
+            System.out.println("Peeked Item : " + stackArr[top]);
+            return stackArr[top];
         }
     }
 
